@@ -44,7 +44,7 @@ Give it some time to compile all the files.
 
 Build the executable:
 	
-	gcc -Wall -Wextra -Werror -I./libft/include/ -L./libft -lft -o gnl get_next_line.c main.c
+	gcc -Wall -Wextra -Werror -o gnl get_next_line.c main.c -L./libft/ -lft -I./libft/include/
 
 -I tells the compiler where your library header files are. `./libft/includes/` in this case
 
