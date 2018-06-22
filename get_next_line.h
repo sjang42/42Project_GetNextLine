@@ -22,14 +22,14 @@
 # define RETRUN_ERROR(x) return (x)
 # define MALLOC_CHECK(x) if ((x) == NULL) {return (NULL);}
 
-typedef struct		s_lists
+typedef struct      s_lists
 {
-	t_list			*head;
-	int				fd;
-	int				nth;
-	struct s_lists	*next;
-}					t_lists;
+    t_list          *head;
+    int             fd;
+    int             nth;
+    struct s_lists  *next;
+}                   t_lists;
 
-int					get_next_line(const int fd, char **line);
+int                 get_next_line(const int fd, char **line);
 
 #endif
